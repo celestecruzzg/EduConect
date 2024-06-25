@@ -180,16 +180,82 @@ footer{
 }
 
 
-.bloq_info{
-  margin-top: 70px;
-  
+/*ESTILO DEL MAIN*/
+
+main {
+  padding: 20px;
+}
+
+/* Welcome section styles */
+.welcome {
+  background-color: #ffd700;
+  border-radius: 20px;
+  padding: 50px 20px;
   text-align: center;
-    margin-bottom: 20px;
+}
+
+.welcome h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+
+/* Team section styles */
+.team {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.team p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+/* Offerings section styles */
+.offerings {
+  background-color: #ffd700;
+  border-radius: 20px;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.offerings h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.offerings p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+/* .bloq_info{
+  margin-top: 70px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .bloq_parrafo{
-  font-size: 14px;
-  padding: 20px;
+  font-size: 13px;
+  padding: 30px;
     background-color: #f1c40f;
     color: #333;
     margin: 20px auto;
@@ -198,6 +264,23 @@ footer{
 }
 
 .bloq_parrafo p{
-  margin: 10px 0;
+  margin: 30px 0;
     line-height: 1.6;
+
 }
+
+
+.info{
+  text-align: right;
+
+}
+
+.info_2{
+  text-align: left;
+}
+
+
+.info_2 img{
+  width: 10rem;
+
+}*/
