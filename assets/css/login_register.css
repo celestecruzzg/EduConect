@@ -14,7 +14,7 @@
   font-weight: 700;
 }
 
-/*!!!! ESTILO DEL BODY !!!!!*/
+/*!!!! ESTILO DEL BODY !!!!!
 body {
   background: url(../image/imagen_1.jpg);
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-}
+}*/
 
 .container {
   background-color: white;

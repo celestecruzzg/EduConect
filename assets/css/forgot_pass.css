@@ -10,10 +10,6 @@
 }
 
 /* Estilo del cuerpo */
-body {
-  background: url(../image/imagen_2.jpg) no-repeat center center fixed;
-  background-size: cover;
-}
 
 /* Estilo de la barra de navegación */
 .navbar {
