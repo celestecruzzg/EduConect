@@ -8,27 +8,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/*!!!! ESTILO DEL NAVBAT !!!!!*/
-.navbar{
-  font-family: 'Monserrat' sans-serif;
-  font-weight: 700;
-}
-
-/*!!!! ESTILO DEL BODY !!!!!
-body {
-  background: url(../image/imagen_1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-}*/
+/*!!!! ESTILO DEL FORM !!!!!*/
 
 .container {
+  margin-top: 20px;
   background-color: white;
   border-radius: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -43,13 +26,8 @@ body {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.3px;
-  margin: 20px 0;
 }
 
-.container span {
-  margin-top: 10px;
-  font-size: 12px;
-}
 
 .container a {
   color: #333;
@@ -59,7 +37,7 @@ body {
 }
 
 .container button {
-  background-color: #f0b400;
+  background-color: #265073;
   color: #fff;
   font-size: 12px;
   padding: 10px 45px;
@@ -73,8 +51,9 @@ body {
 }
 
 .container button.hidden{
-  background-color: transparent;
-  border-color: #fff;
+  margin-top: -10px;
+  background-color: #ffff;
+  color: #265073;
 }
 
 .container form{
@@ -105,6 +84,37 @@ body {
   transition: all 0.6s ease-in-out;
 }
 
+.logo-sign {
+  position: absolute;
+  top: 40px; /* Ajusta la posición vertical según sea necesario */
+  left: 33%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.logo-sign img {
+  width: 30px; /* Ajusta el tamaño según el tamaño de tu logo */
+  height: 30px; /* Ajusta el tamaño según el tamaño de tu logo */
+  margin-right: 5px; /* Espacio entre la imagen y el texto */
+}
+
+.logo-sign a {
+  font-weight: 700;
+  color: #265073;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Ajuste para el título principal */
+.form-container h1 {
+  margin-top: 0px; /* Ajusta el espacio para que el título principal no se superponga con logo-sign */
+}
+
+
+.form-container span{
+  font-size: 12px;
+}
 .sign-in{
   left: 0;
   width: 50%;
@@ -169,15 +179,20 @@ body {
   z-index: 1000;
 }
 
+.toggle-panel img {
+  width: 270px;
+  height: 270px;
+}
+
 .container.active .toggle-container{
   transform: translateX(-100%);
   border-radius: 0 150px 100px 0;
 }
 
 .toggle{
-  background-color: #f0b400;
+  background-color: #265073;
   height: 100%;
-  background: linear-gradient(to right, #f0b400, #f0b400);
+  background: linear-gradient(to right, #265073, #265073);
   color: #fff;
   position: relative;
   left: -100%;
@@ -221,4 +236,101 @@ body {
 
 .container.active .toggle-right{
   transform: translateX(200%);
+}
+
+
+/*!!! FOOTER */
+.footer {
+  margin-top: 15px;
+  background-color: #121212;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.footer-logo span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-nav a:hover {
+  color: #ddd;
+}
+
+.footer-social {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #ddd;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+  }
+
+  .footer-logo {
+    margin-bottom: 0;
+  }
+
+  .footer-nav {
+    margin-bottom: 0;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+  }
 }

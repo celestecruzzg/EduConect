@@ -39,12 +39,12 @@
 }
 
 .container-fluid a{
-  color: #FDBF00;
+  color: #265073;
   font-weight: 700;
 }
 
 .container-fluid a:hover{
-  color: #FDBF00;
+  color: #265073;
 }
 
 .navegacion {
@@ -68,16 +68,16 @@
 }
 
 .navegacion a.home-page {
-  color: #FDBF00;
+  color: #265073;
 }
 
 .navegacion a:hover {
-  color: #FDBF00;
+  color: #265073;
 }
 
 /* Estilo para el enlace de iniciar sesión */
 .iniciar a {
-  background-color: #FDBF00;
+  background-color: #265073;
   color: #fff;
   font-size: 12px;
   padding: 10px 45px;
@@ -90,161 +90,114 @@
 }
 
 .iniciar a:hover {
-  background-color: #fd9800;
+  background-color: #265073;
 }
 
-/*Edicion del Contenido*/
+/*!!! CUERPO DE LA PAGINA
 
-.conteiner1 {
-  background-color: rgba(255, 255, 255, 0.868);
-  margin-top: 90px;
-  margin-left: 90px;
-  border-radius: 30px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-  position: relative;
-  overflow: hidden;
-  width: 980px;
-  max-width: 200%;
-  min-height: 590px;
-  text-align: left;
-  justify-content: center;
-  margin-left: 15px;
-  border-color: #070707;
-}
 
-.img1 {
-  background: url(../image/estudy.png) no-repeat;
-  
-}
 
-.conteiner1 h1{
+
+
+
+
+
+
+
+
+
+/*!!! FOOTER */
+.footer {
   margin-top: 15px;
-  font-size: 50px;
-  margin-left: 20px;
-}
-
-.content1 h2{
-  margin-top: 10px;
-  font-size: 24px;
-  margin: 0px;
-  line-height: 1.2;
-  margin-left: 15px
-}
-
-.content2 {
-  margin-top: 30px;
-  font-size: 25px;
-  margin-left: 15px;
-  justify-content: 20px;
-
-}
-
-.content3 {
-  margin-top: 50px;
-  font-size: 25px;
-  margin-left: 15px;
-  justify-content: 20px;
-} 
-
-.btn-1 {
-  display: flex;
-  align-items: center;
-  margin-top: 30px;
-  margin-left: 250px;
-}
-
-.btn-1 a {
-  background-color: #FDBF00;
+  background-color: #121212;
   color: #fff;
-  font-size: 22px;
-  padding: 20px 45px;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  text-decoration: none;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.btn-1 a:hover {
-  background-color: #fd9800;
-}
-
-
-
-
-
-
-/*!!!! ESTILO DEL FOOTER !!!!!*/
-footer{
-  position: absolute;
-  margin-bottom: 10;
-  bottom: 100;
-  left: 0;
-  right: 0;
-  background: #ffffff;
-  height: auto;
-  width: 100vw;
-  font-family: "Open Sans";
-  padding-top: 40px;
-  color: #070707;
-}
-.footer-content{
+.footer-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.footer-content h3{
-  font-size: 0rem;
-  font-weight: 0;
-  text-transform: capitalize;
-  line-height: 2.2rem;
-}
-.footer-content p{
-  max-width: 300px;
-  margin: 10px 10px;
-  line-height: 28px;
-  font-size: 14px;
-}
-.socials{
-  list-style: none;
+
+.footer-logo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 1rem 0 3rem 0;
+  margin-bottom: 20px;
 }
-.socials li{
-  margin: 0 10px;
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
-.socials a{
+
+.footer-logo span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  color: #fff;
   text-decoration: none;
-  color: #292929;
-}
-.socials a i{
-  font-size: 1.1rem;
-  transition: color .4s ease;
-
-}
-.socials a:hover i{
-  color: #FDBF00;
+  font-weight: 500;
 }
 
-.footer-bottom{
-  background: #FDBF00;
-  width: 100vw;
-  padding: 0px 0px;
-  text-align: center;
-  height: 10vh;
+.footer-nav a:hover {
+  color: #ddd;
 }
-.footer-bottom p{
+
+.footer-social {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #ddd;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
   font-size: 14px;
-  word-spacing: 2px;
-  text-transform: capitalize;
 }
-.footer-bottom span{
-  text-transform: uppercase;
-  opacity: .4;
-  font-weight: 200;
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+  }
+
+  .footer-logo {
+    margin-bottom: 0;
+  }
+
+  .footer-nav {
+    margin-bottom: 0;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+  }
 }

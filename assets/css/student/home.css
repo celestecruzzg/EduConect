@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos Generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F1FADA;
+    color: #265073;
+    margin-top: 60px;
+}
+
+.navbar {
+    background-color: #265073;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #F1FADA !important;
+}
+
+.nav-link:hover {
+    color: #9AD0C2 !important;
+}
+
+.main-content {
+    margin-top: 5rem;
+}
+
+/* Sección de Bienvenida */
+#bienvenida h1 {
+    font-weight: 700;
+    color: #2D9596;
+}
+
+#bienvenida p {
+    color: #9AD0C2;
+}
+
+/* Sección de Búsqueda de Asesorías */
+#buscar-asesorias {
+    background-color: #9AD0C2;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+#buscar-asesorias h2 {
+    color: #265073;
+}
+
+/* Sección de Mis Asesorías */
+#mis-asesorias {
+    margin-top: 2rem;
+}
+
+#mis-asesorias h2 {
+    color: #2D9596;
+}
+
+/* Sección de Mensajes */
+#mensajes {
+    margin-top: 2rem;
+}
+
+#mensajes h2 {
+    color: #265073;
+}
+
+/* Sección de Perfil */
+#perfil {
+    margin-top: 2rem;
+}
+
+#perfil h2 {
+    color: #2D9596;
+}
+
+#perfil .card {
+    background-color: #9AD0C2;
+    border: none;
+    color: #265073;
+}
+
+#perfil .card-title {
+    font-weight: 600;
+}

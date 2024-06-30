@@ -11,7 +11,7 @@
 
 /* Estilo del cuerpo */
 
-/* Estilo de la barra de navegación */
+/*!!! NAVBAR !!!*/
 .navbar {
   display: flex;
   align-items: center;
@@ -26,7 +26,6 @@
   z-index: 1000;
 }
 
-/*!!! NAVBAR !!!*/
 .navbar > * {
   flex: 1; /* Cada hijo del navbar toma el mismo espacio */
 }

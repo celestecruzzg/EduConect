@@ -1,130 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-  <head>
-    <title>Iniciar Sesión | EduConnect</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <!-- CSS -->
-    <link rel="preload" href="../../assets/css/login_register.css" as="style" />
-    <link rel="stylesheet" href="../../assets/css/login_register.css" />
-    <!-- FAVICON -->
-    <link
-      rel="shortcut icon"
-      href="../../assets/image/favicon.ico"
-      type="image/x-icon"
-    />
-    <!-- MATERIAL ICONS -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../../index.html">
-            <img
-              src="../../assets/image/logo.png"
-              alt="Logo"
-              width="30"
-              height="24"
-              class="d-inline-block align-text-top"
-            />
-            EduConnect
-          </a>
+<head>
+  <title>Iniciar sesión</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- CSS -->
+  <link rel="preload" href="../../assets/css/login/login_register.css" as="style">
+  <link rel="stylesheet" href="../../assets/css/normalize.css">
+  <link rel="preload" href="../../assets/css/login_register.css" as="style" />
+  <link rel="stylesheet" href="../../assets/css/login/login_register.css" />
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="../../assets/image/favicon.ico" type="image/x-icon" />
+  <!-- MATERIAL ICONS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="form-container sign-up">
+      <form method="post" action="registro.php">
+        <h1 style="font-weight: 700">¡Comienza ahora!
+        </h1>
+        <span>Usa tu matricula escolar para registrarte</span>
+          <input type= "text" name="nombre" placeholder="Nombre(s)" required/>
+          <input type="text" name="ap_paterno" placeholder="Apellido Paterno" required/>
+          <input type="text" name="ap_materno" placeholder="Apellido Materno" required/>
+          <div class="input-with-icon">
+            <input type="text" name="matricula" placeholder="Matricula" /><i class="material-icons" style="color: #265073">badge</i>
+            <input type="password" name="contraseña" placeholder="Contraseña" /><i class="material-icons" style="color: #265073">lock</i>
+          </div>
+          <button type="submit" name="registro">Registrarse</button>
+        </form>
+    </div>
+    <div class="form-container sign-in">
+      <div class="logo-sign">
+        <img src="../../assets/image/logo.png" width="22" height="22" alt="Logo"/>
+        <a href="../../index.html" style="font-weight: 700;"">EduConnect</a>
+      </div>
+      <form method="post" action="login.php">
+        <h1 style="font-weight: 700">¡Hola, de nuevo!</h1>
+        <span>Ingresa tu matricula y contraseña</span>
+        <div class="input-with-icon">
+          <input type="text" name="matricula" placeholder="Matricula" required /><i class="material-icons" style="color: #265073">badge</i>
+          <input type="password" name="contraseña" placeholder="Contraseña" required/><i class="material-icons" style="color: #265073">lock</i>
         </div>
-      </nav>
-    </header>
-    <div class="container" id="container">
-      <div class="form-container sign-up">
-        <form>
-          <h1 style="font-weight: 700">
-            <i class="fa-solid fa-user" style="color: #f0b400"></i> Registrate
-          </h1>
-          <span>Usa tu matricula escolar para registrarte</span>
-          <input type="text" placeholder="Nombre(s)" />
-          <input type="text" placeholder="Apellido Paterno" />
-          <input type="text" placeholder="Apellido Materno" />
-          <div class="input-with-icon">
-            <input type="text" placeholder="Matricula" /><i
-              class="material-icons"
-              style="color: #f0b4009c"
-              >badge</i
-            >
-            <input type="password" placeholder="Contraseña" /><i
-              class="material-icons"
-              style="color: #f0b4009c"
-              >lock</i
-            >
-          </div>
-          <button>Registrarse</button>
-        </form>
-      </div>
-      <div class="form-container sign-in">
-        <form>
-          <h1 style="font-weight: 700">
-            <i class="fa-solid fa-user" style="color: #f0b400"></i> Inicia
-            sesión
-          </h1>
-          <span>Ingresa tu matricula y contraseña</span>
-          <div class="input-with-icon">
-            <input type="text" placeholder="Matricula" /><i
-              class="material-icons"
-              style="color: #f0b4009c"
-              >badge</i
-            >
-            <input type="password" placeholder="Contraseña" /><i
-              class="material-icons"
-              style="color: #f0b4009c"
-              >lock</i
-            >
-          </div>
-          <a
-            href="../forgot_pass/index.html"
-            style="font-weight: 550; color: rgb(2, 80, 168)"
-            >¿Olvidaste tu contraseña?</a
-          >
-          <button>Iniciar sesión</button>
-        </form>
-      </div>
-      <div class="toggle-container">
-        <div class="toggle">
-          <div class="toggle-panel toggle-left">
-            <h1 style="font-weight: 700">¡Bienvenid@ nuevamente!</h1>
-            <p>
-              Ingresa tus datos para utilizar todas las funciones de nuestra
-              plataforma
-            </p>
-            <button class="hidden" id="login">Iniciar sesión</button>
-          </div>
-          <div class="toggle-panel toggle-right">
-            <h1 style="font-weight: 700">¡Hola!</h1>
-            <p>
-              Registrate con tus datos para utilizar todas las funciones de
-              nuestra plataforma
-            </p>
-            <button class="hidden" id="register">Registrarse</button>
-          </div>
+        <a href="../forgot_pass/index.html" style="font-weight: 550; color: rgb(2, 80, 168)">¿Olvidaste tu
+          contraseña?</a>
+        <button type="submit" name="inicio_sesion">Iniciar sesión</button>
+      </form>
+    </div>
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-left">
+          <img src="../../assets/image/book.png" alt="libro">
+          <p>
+            ¿Ya tienes una cuenta?
+          </p>
+          <button class="hidden" id="login">Iniciar sesión</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+          <img src="../../assets/image/book.png" alt="libro">
+          <p>
+            ¿No tienes una cuenta?
+          </p>
+          <button class="hidden" id="register">Registrarse</button>
         </div>
       </div>
     </div>
-    <script src="../../assets/js/script.js"></script>
-  </body>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../../assets/image/logo.png" alt="Logo" />
+        <span>EduConnect</span>
+      </div>
+      <nav class="footer-nav">
+        <a href="../../index.html">Inicio</a>
+        <a href="../home_page/about_us.html">Acerca de Nosotros</a>
+        <a href="../home_page/support.html">Soporte</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 EduConnect. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!-- SCRIPT DE JS -->
+  <script src="../../assets/js/script.js"></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
