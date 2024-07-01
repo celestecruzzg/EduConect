@@ -93,7 +93,178 @@
   background-color: #2D9596;
 }
 
-/*!!! CUERPO DE LA PAGINA
+/*!!! CUERPO DE LA PAGINA*/
+
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../image/modelo1.png) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 75vh; /* Ajusta esto según tus necesidades */
+  text-align: center;
+}
+
+
+.post_nav{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+position: relative;
+width: 837px;
+height: 208px;
+}
+
+.post_nav h1 {
+width: 837px;
+height: 78px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 78px;
+
+/* color and height */
+text-align: center;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+
+/* Inside auto layout */
+/*flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;*/
+}
+
+.post_nav h3 {
+width: 430px;
+height: -950px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+
+display: flex;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+
+/* Inside auto layout */
+/*flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;*/
+}
+
+.start_now a {
+
+background: #2D9596;
+color: #fff;
+padding: 14px 24px;
+width: 207px;
+height: 49px;
+font-size: 16px;
+border: 2px solid transparent;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: 421;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+border-radius: 8px;
+
+}
+/* Animation*/
+.start_now a:hover {
+  background-color: #265073;
+}
+
+
+.section2 {
+position: absolute;
+width: 1519px;
+height: 83px;
+background: #0F3759;
+}
+
+.section2 h2 {
+  color: #FFFFFF;
+height: 80px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 45px;
+display: flex;
+align-items: center;
+margin-right: 0px;
+
+/* para centrar horizontal y verticalmente el texto dentro del rectángulo azul. */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.contenido {
+
+width: 512px;
+height: 512px;
+background: url(../image/laptop.png);
+margin-top: 200px;
+}
+
+.contenido h2{
+  /* BENEFICIOS PRINCIPALES */
+  margin-top: -200px;
+position: absolute;
+width: 486px;
+height: 90px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 48px;
+display: flex;
+align-items: center;
+color: #080A1A;
+margin-left: 83vh;
+}
+
+.contenido2 {
+background: url(../image/personasIcon.png) no-repeat;
+margin-left: auto; /* Ajusta el margen izquierdo para centrar horizontalmente */
+margin-right: 0; /* Elimina el margen derecho */
+position: absolute;
+width: 299px;
+height: 299px;
+} 
+
+.contenido2 h4 {
+/*position: absolute;*/
+
+width: 252px;
+height: 69px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 27px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #1E1E1E;
+margin-right: 100px;
+}
+
+.contenido 
+
+.contenido 
+
+.rectangle
 
 
 
@@ -104,11 +275,12 @@
 
 
 
+/*!!! CUERPO DE LA PAGINA ENDS*/
 
 
 /*!!! FOOTER */
 .footer {
-  margin-top: 15px;
+  margin-top: 646px;
   background-color: #121212;
   color: #fff;
   padding: 20px 0;
