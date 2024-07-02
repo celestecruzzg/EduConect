@@ -1,7 +1,6 @@
-/* Importación de la fuente Montserrat */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* Estilo general */
+/*!!!! ESTILO DEL GENERAL !!!!!*/
 * {
   margin: 0;
   padding: 0;
@@ -9,66 +8,24 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* Estilo del cuerpo */
-
-/*!!! NAVBAR !!!*/
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
-  padding: 10px 20px;
-  width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-.navbar > * {
-  flex: 1; /* Cada hijo del navbar toma el mismo espacio */
-}
-
-.container-fluid a {
-  color: #fdbf00;
-  font-weight: 700;
-}
-
-.container-fluid a:hover {
-  color: #fdbf00;
-}
-
-/*!!! CONTENEDOR !!!*/
-
-.container-fluid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/*!!!! ESTILO DEL FORM !!!!!*/
 
 .container {
-  margin-top: 100px;
+  margin-top: 20px;
   background-color: white;
   border-radius: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
   position: relative;
   overflow: hidden;
-  width: 780px;
+  width: 480px;
   max-width: 100%;
-  min-height: 300px;
+  min-height: 400px;
 }
 
 .container p {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.3px;
-  margin: 20px 0;
-}
-
-.container span {
-  margin-top: 10px;
-  font-size: 12px;
 }
 
 .container a {
@@ -79,7 +36,7 @@
 }
 
 .container button {
-  background-color: #f0b400;
+  background-color: #265073;
   color: #fff;
   font-size: 12px;
   padding: 10px 45px;
@@ -92,9 +49,15 @@
   cursor: pointer;
 }
 
+.container button:hover {
+  color: #ffff;
+  background-color: #2D9596;
+}
+
 .container button.hidden {
-  background-color: transparent;
-  border-color: #fff;
+  margin-top: -10px;
+  background-color: #ffff;
+  color: #265073;
 }
 
 .container form {
@@ -123,4 +86,51 @@
   top: 0;
   height: 100%;
   transition: all 0.6s ease-in-out;
+}
+
+.logo-forgot-pass {
+  position: absolute;
+  top: 40px;
+  left: 33%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.logo-forgot-pass img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.logo-forgot-pass a {
+  font-weight: 700;
+  color: #265073;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.form-container h1 {
+  margin-top: 0px;
+}
+
+.form-container span {
+  font-size: 12px;
+}
+
+.input-with-icon {
+  position: relative;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.input-with-icon input {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.input-with-icon i {
+  position: absolute;
+  left: 8px;
+  margin-top: 15px;
 }
