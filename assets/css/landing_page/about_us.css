@@ -200,3 +200,131 @@
     margin-bottom: 0;
   }
 }
+
+
+
+
+
+
+
+
+
+
+/*ESTILO DEL MAIN*/
+.que_es{
+  padding: 50px;
+    /*justify-content: right;
+    margin-left: 600px;
+    gap: 20px;*/
+    display: flex;
+    
+}
+
+.que_es p{
+  justify-content: right;
+margin-left: 190px;
+max-width: 900px;
+}
+
+.que_es img{
+  width: 500px;
+  right: auto;
+  
+  
+}
+
+.que_es h1{
+  font-size: 40px;
+  margin: 10px;
+}
+
+.title span{
+  color: #265073;
+}
+.title h1{
+  font-size: 40px;
+  margin-top: 90px;
+  margin-left: 750px;
+
+  
+}
+
+
+
+
+.bloq{
+  padding: 20px;
+  display: flex;
+
+}
+
+
+.subtitle h1{
+  font-size: 40px;
+  margin-left: 10px;
+  padding: 15px;
+}
+
+.subtitle span{
+  color: #265073;
+}
+
+.que_ofrece{
+  background-color:#2D9596;
+}
+.que_ofrece p{
+    line-height: 2;
+    margin-left: 15px;
+    max-width: 800px;
+  
+}
+
+.que_ofrece img{
+  width: 400px;
+  right: auto;
+  margin-left: 50px;
+
+}
+
+
+.bloq_info{
+  text-align: center;
+  padding: 100px;
+}
+
+.bloq_info span{
+  color: #265073;
+}
+
+.equipo{
+  display: flex;
+  justify-content: center;
+}
+
+.equipo h4{
+  margin: 15px;
+  margin-top: 80px;
+  font-size: 15 px;
+}
+
+
+
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.member {
+  text-align: center;
+}
+
+.photo {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
