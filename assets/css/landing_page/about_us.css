@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-/*!!!! ESTILO DEL GENERAL !!!!!*/
+/*!!! Estilos Generales */
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +8,8 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/*!!!! ESTILO DEL BODY !!!!!*/
 
-
-/*!!!! ESTILO DEL NAVBAR !!!!!*/ 
+/*!!! Estilos para el Navbar */
 .navbar {
   display: flex;
   align-items: center;
@@ -26,51 +24,23 @@
   z-index: 1000;
 }
 
-/* Alinea los contenedores principales del navbar */
-.navbar > * {
-  flex: 1; /* Cada hijo del navbar toma el mismo espacio */
-}
-
-.container-fluid {
+.navbar .navbar-brand {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* Alinea a la izquierda */
-}
-
-.container-fluid a{
+  gap: 10px;
+  font-weight: bold;
   color: #265073;
-  font-weight: 700;
+  text-decoration: none;
 }
 
-.container-fluid a:hover{
-  color: #265073;
-}
-
-.navegacion {
-  display: flex;
-  justify-content: space-between; /* Centra los elementos */
-  align-items: center;
-}
-
-.iniciar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; /* Alinea a la derecha */
-}
-
-/* Estilo de los enlaces de navegación */
 .navegacion a {
-  color: rgb(58, 58, 58);
+  color: #3a3a3a;
   font-weight: 600;
-  margin: 0 15px; /* Espacio entre los enlaces */
+  margin: 0 15px;
   text-decoration: none;
 }
 
 .navegacion a.about-us {
-  color: #2D9596;
-}
-
-.navegacion a:hover {
   color: #2D9596;
 }
 
@@ -89,25 +59,54 @@
 }
 
 .iniciar a:hover {
-  background-color: #2D9596;
+  background-color: #0D6EFD;
 }
 
-/*!!! CUERPO DE LA PAGINA
+/*!!! Estilos de la Sección Acerca de Nosotros */
+.about-us-section .container {
+  margin-top: 80px; /* Ajusta el margen superior para que no se solape con el navbar */
+}
 
+.about-us-section h2 {
+  font-weight: 700;
+  color: #265073;
+}
 
+.about-us-section h2 .highlight {
+  color: #2D9596;
+}
 
+.about-us-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
 
+.about-us-section ul li {
+  margin-bottom: 10px;
+}
 
+.about-us-section img {
+  margin-bottom: 20px;
+}
 
+.puntos{
+  margin-top: 40px;
+}
 
+/*!!! Estilos del Equipo */
+.text-center img {
+  width: 150px;
+  height: 150px;
+}
 
+.text-center p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #265073;
+}
 
-
-
-
-/*!!! FOOTER */
+/*!!! Estilos del Footer */
 .footer {
-  margin-top: 15px;
   background-color: #121212;
   color: #fff;
   padding: 20px 0;
@@ -199,132 +198,4 @@
   .footer-social {
     margin-bottom: 0;
   }
-}
-
-
-
-
-
-
-
-
-
-
-/*ESTILO DEL MAIN*/
-.que_es{
-  padding: 50px;
-    /*justify-content: right;
-    margin-left: 600px;
-    gap: 20px;*/
-    display: flex;
-    
-}
-
-.que_es p{
-  justify-content: right;
-margin-left: 190px;
-max-width: 900px;
-}
-
-.que_es img{
-  width: 500px;
-  right: auto;
-  
-  
-}
-
-.que_es h1{
-  font-size: 40px;
-  margin: 10px;
-}
-
-.title span{
-  color: #265073;
-}
-.title h1{
-  font-size: 40px;
-  margin-top: 90px;
-  margin-left: 750px;
-
-  
-}
-
-
-
-
-.bloq{
-  padding: 20px;
-  display: flex;
-
-}
-
-
-.subtitle h1{
-  font-size: 40px;
-  margin-left: 10px;
-  padding: 15px;
-}
-
-.subtitle span{
-  color: #265073;
-}
-
-.que_ofrece{
-  background-color:#2D9596;
-}
-.que_ofrece p{
-    line-height: 2;
-    margin-left: 15px;
-    max-width: 800px;
-  
-}
-
-.que_ofrece img{
-  width: 400px;
-  right: auto;
-  margin-left: 50px;
-
-}
-
-
-.bloq_info{
-  text-align: center;
-  padding: 100px;
-}
-
-.bloq_info span{
-  color: #265073;
-}
-
-.equipo{
-  display: flex;
-  justify-content: center;
-}
-
-.equipo h4{
-  margin: 15px;
-  margin-top: 80px;
-  font-size: 15 px;
-}
-
-
-
-
-.team-members {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px;
-}
-
-.member {
-  text-align: center;
-}
-
-.photo {
-  width: 100px;
-  height: 100px;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin: 0 auto 10px auto;
 }
