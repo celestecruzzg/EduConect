@@ -11,7 +11,8 @@
 /*!!!! ESTILO DEL FORM !!!!!*/
 
 .container {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 70px;
   background-color: white;
   border-radius: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -66,7 +67,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 40px;
+  /*padding: 0 40px;*/
+  padding-left: 40px;
+  padding-right: 50px;
   height: 100%;
 }
 
@@ -111,11 +114,14 @@
 }
 
 .form-container h1 {
-  margin-top: 0px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .form-container span {
+  text-align: center;
   font-size: 12px;
+  margin-bottom: 15px;
 }
 
 .input-with-icon {
@@ -132,5 +138,102 @@
 .input-with-icon i {
   position: absolute;
   left: 8px;
+  margin-top: 12px;
+}
+
+
+/*!!! FOOTER */
+.footer {
   margin-top: 15px;
+  background-color: #121212;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.footer-logo span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 70px;
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-nav a:hover {
+  color: #ddd;
+}
+
+.footer-social {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #ddd;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+  }
+
+  .footer-logo {
+    margin-bottom: 0;
+  }
+
+  .footer-nav {
+    margin-bottom: 0;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+  }
 }
