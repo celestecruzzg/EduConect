@@ -90,8 +90,8 @@
 
 .logo-forgot-pass {
   position: absolute;
-  top: 40px;
-  left: 33%;
+  top: 30px;
+  left: 25%;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
